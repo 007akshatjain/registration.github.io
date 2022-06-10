@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="signupSection">
+        <div class="info">
+          <h2>Tell Us About Our Website</h2>
+          <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+          <p>Open To Us</p>
+          <div>
+          <h2>Contact us:-</h2>
+          <a href="https://github.com/007akshatjain"><i class="fab fa-github"></i></a><br><br>
+          <a href="https://instagram.com/akj_13_06?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a><br><br>
+          <a href="https://www.linkedin.com/in/akshat-jain-8506a6225"><i class="fab fa-linkedin"></i></a>
+        </div>
+        </div>
+        <form action="connect.php" method="post" class="signupForm" name="signupform">
+          <h2>Register Here:</h2>
+          <ul class="noBullet">
+            <li>
+              <label for="username"></label>
+              <input type="text" class="inputFields" id="username" name="username" placeholder="Username" value="" oninput="return userNameValidation(this.value)" required/>
+            </li>
+            <li>
+              <label for="password"></label>
+              <input type="password" class="inputFields" id="password" name="password" placeholder="Password" value="" oninput="return passwordValidation(this.value)" required/>
+            </li>
+            <li>
+              <label for="email"></label>
+              <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+            </li>
+            <li>
+              <label for="feedback"></label>
+              <h4>Feedback:-</h4>
+<textarea rows="10" cols="38" name="feedback" placeholder="Your Valuable Feedback Here..." value=""></textarea>
+            </li>
+            <nav>
+              <ul class="btn" style="text-align:center ; margin-left: 120px;">
+                <li>
+                  submit
+                  <span></span><span></span><span></span><span></span>
+                </li>
+              </ul>
+            </nav>
+          </ul>
+        </form>
+      </div>
+    
+</body>
+</html>
